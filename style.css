@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Inter-Medium;
+  src: url(fonts/Inter-Medium.otf);
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(fonts/Inter-Regular.otf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  background-color: black;
+  font-family: Inter-Regular;
+}
+
+.websiteContainer {
+  display: block;
+  max-width: 800px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+
+}
+
+.contentContainer {
+  display: flex;
+  background-color: black;
+  border-top: 1px solid white;
+  text-align: left;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 64px;
+
+}
+
+.leftColumnContainer {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 22px;
+}
+
+.rightColumnContainer {
+  display: inline-block;
+  float: right;
+  width: 60%;
+  height: auto;
+  font-size: 14px;
+}
+
+.collapsible {
+  color: white;
+  cursor: pointer;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  text-align: left;
+  margin-top: -1px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 0px solid white;
+  font-size: 14px;
+}
+
+.collapsibleTitle {
+  padding-left: 12px;
+}
+
+.active, .collapsible:hover {
+  color: yellow;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.image {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .contentContainer {
+    display: block;
+    border: 0px;
+    margin-bottom: 16px;
+  }
+
+  .leftColumnContainer {
+    display: block;
+    float: none;
+    margin-right: 16px;
+    width: 100%;
+  }
+
+  .rightColumnContainer {
+    display: block;
+    float: none;
+    padding-bottom: 16px;
+    width: 100%;
+  }
+}
