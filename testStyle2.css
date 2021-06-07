@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Inter-Medium;
+  src: url(fonts/Inter-Medium.otf);
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(fonts/Inter-Regular.otf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px dashed blue;
+  font-size: 12px;
+  font-family: Inter;
+}
+
+body {
+  border: 1px dashed red;
+}
+
+.websiteContainer {
+  width: auto;
+  margin: 24px;
+}
+
+.headerContainer {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 24px;
+}
+
+.column {
+  width: 50%;
+  padding-right: 12px;
+}
+
+.contentContainer {
+  display: block;
+}
+
+.collapsibleContainer {
+  width: auto;
+  margin-top: 16px;
+}
+
+.collapsibleContainerTitle {
+  margin-bottom: 8px;
+
+}
+
+.collapsible {
+
+  cursor: pointer;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin-top: -1px;
+}
+
+
+.active, .collapsible:hover {
+  color: yellow;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.image {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .contentContainer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .collapsibleContainer {
+    max-width: 400px;
+    margin-right: 16px;
+
+  }
+
+}
