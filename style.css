@@ -19,7 +19,7 @@
 }
 
 body {
-
+  touch-action: manipulation;
 }
 
 .websiteContainer {
