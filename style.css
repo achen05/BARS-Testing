@@ -8,12 +8,13 @@
   src: url("fonts/Inter-Regular.otf");
 }
 
+
 * {
   margin: 0px;
   padding: 0px;
 
-  font-size: 12px;
-  font-family: Inter-Regular;
+  font-size: 18px;
+  font-family: VT323;
   color: white;
   background-color: black;
 }
@@ -28,15 +29,16 @@ body {
 }
 
 .headerContainer {
-  display: flex;
+  display: block;
   width: 100%;
   max-width: 700px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+  margin-right: 20px;
 }
 
 .column {
-  width: 50%;
-  padding-right: 12px;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 .contentContainer {
@@ -97,6 +99,12 @@ body {
   border: 1px solid black;
 }
 
+.videoEmbed {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 .collapsibleText {
   background-color: inherit;
   color: inherit;
@@ -129,6 +137,18 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
+
+  .headerContainer {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 24px;
+  }
+
+  .column {
+    width: 50%;
+    padding-right: 12px;
+  }
 
   .contentContainer {
     display: inline-flex;
